@@ -1,16 +1,16 @@
 import Link from "next/link"
-
 const Home = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <Link href="/blog">
-        <a>Blog</a>
+    <>
+      <h1>pre-rendering</h1>
+      <Link href="/users">
+        <a>Users</a>
       </Link>
-      <Link href="/product">
-        <a>Products</a>
+      <br />
+      <Link href="/posts">
+        <a>Posts</a>
       </Link>
-    </div>
+    </>
   )
 }
 
