@@ -10,6 +10,10 @@ const Home = () => {
       <Link href="/posts">
         <a>Posts</a>
       </Link>
+      <br />
+      <Link href="/character">
+        <a>Character</a>
+      </Link>
     </>
   )
 }

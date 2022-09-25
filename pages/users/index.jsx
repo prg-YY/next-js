@@ -1,4 +1,5 @@
 import Link from "next/link"
+import User from "../../components/User"
 
 const userList = ({ users }) => {
   return (
@@ -8,9 +9,7 @@ const userList = ({ users }) => {
       {users.map((user) => {
         return (
           <div key={user.id}>
-            <Link href={`users/${user.id}`} passHref>
-              <h4>{user.name}</h4>
-            </Link>
+            <User user={user} />
           </div>
         )
       })}
@@ -25,7 +24,7 @@ export async function getStaticProps() {
   const users = await res.json()
   return {
     props: {
-      users: users.slice(0, 5),
+      users: users,
     },
   }
 }
