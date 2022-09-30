@@ -14,6 +14,18 @@ const Home = () => {
       <Link href="/character">
         <a>Character</a>
       </Link>
+      <br />
+      <Link href="/news">
+        <a>News</a>
+      </Link>
+      <br />
+      <Link href="/dashboard">
+        <a>Dashboard</a>
+      </Link>
+      <br />
+      <Link href="/events">
+        <a>Events</a>
+      </Link>
     </>
   )
 }
